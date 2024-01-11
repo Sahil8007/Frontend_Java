@@ -1,0 +1,37 @@
+<!-- Que-4  Canvas and SVG tags 
+
+Ans- <canvas> Tag:
+The <canvas> element is used for drawing graphics, such as shapes, images, and animations, using JavaScript. It provides a bitmap-based rendering context where you can draw pixels directly. It's well-suited for dynamic and interactive graphics. -->
+
+<canvas id="myCanvas" width="300" height="150"></canvas>
+
+<script>
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+
+  ctx.fillStyle = "lightblue";
+  ctx.fillRect(50, 25, 200, 100);
+</script>
+
+<!-- In this example, we create a canvas with a width of 300 pixels and a height of 150 pixels. The JavaScript code uses the 2D rendering context (getContext("2d")) to draw a filled rectangle on the canvas. -->
+
+<!-- <svg> Tag:
+    The <svg> element is used for creating scalable vector graphics. SVG is an XML-based markup language that describes two-dimensional vector graphics. It's well-suited for static graphics and illustrations and can be easily styled and manipulated using CSS and JavaScript -->
+
+        <svg width="300" height="150">
+            <rect x="50" y="25" width="200" height="100" fill="lightgreen" />
+          </svg>
+
+          <!-- In this example, we use the <rect> element within the <svg> element to draw a rectangle. The attributes of the <rect> element specify its position, size, and fill color. -->
+    
+            <!-- Choosing between <canvas> and <svg>:
+                Use <canvas> when:
+                
+                You need a pixel-based drawing surface.
+                You are creating complex animations or interactive graphics.
+                Performance is crucial for your application.
+                Use <svg> when:
+                
+                You want to create scalable and resolution-independent graphics.
+                Graphics are more static and don't require frequent updates.
+                You need to manipulate and style the graphics using CSS. -->
